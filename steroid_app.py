@@ -19,7 +19,7 @@ st.write("""Czock, D et al, (2005). Pharmacokinetics and pharmacodynamics of sys
 
 
 # 參數區塊
-drug = st.selectbox("請選擇使用類固醇", ["Prednisolone (PO)"])
+drug = st.selectbox("請選擇使用類固醇", ["Prednisolone (PO)", "Methylprednisolone (PO)"])
 dose = st.number_input("請輸入服用劑量 (mg)：")
 t_draw = st.time_input("請輸入採血時間：", datetime.time(8,0))
 administration = st.selectbox("請選擇給藥頻次：", ["single dose", "QD", "BID", "TID"])
@@ -48,7 +48,9 @@ def cross_reaction(dos, t, ka, k, v_over_f, cross_reactivity): # in mcg/dL
     return dos * ka * (math.exp(-1 * k * t) - math.exp(-1 * ka * t)) / (ka-k) / v_over_f * cross_reactivity
 
 def pk(conc): # (ka, k, v_over_f, cross_reactivity)
-    if conc <= 20:
+    if drug == "Methylprednisolone (PO)":
+        return (1.7, 0.27, 100, 14.70)
+    elif conc <= 20:
         return (1.8, 0.28, 42, 7.32)
     elif conc <= 60:
         return (2.2, 0.25, 64, 7.32)
