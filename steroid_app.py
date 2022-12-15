@@ -73,5 +73,5 @@ def multi_cross(series, pk_para, dos):
 series = hour_series(t_draw, t_medicine)
 
 if st.button("確認"):
-    st.write(f"藥物在血中的濃度預估為{ round(multi_con(series, pk(dose)[:-1], dose), 2) }")
-    st.write(f"藥物造成的交叉反應預估為{ round(multi_cross(series, pk(dose), dose), 2) }")
+    st.write(f"藥物在血中的濃度預估為{ round(multi_con(series, pk(dose)[:-1], dose), 2) }mg/L")
+    st.write(f"藥物造成的交叉反應預估為{ round(multi_cross(series, pk(dose), dose), 2) }μg/dL")
