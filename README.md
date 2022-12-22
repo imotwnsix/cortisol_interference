@@ -2,12 +2,13 @@
 ## background
 本計算器用來評估
 
-皮質素(cortisol)的檢驗多為免疫分析法。
+現行皮質素(cortisol)的檢驗多為免疫分析法。
 在服用外源性類固醇的情況下，可能因為交叉反應導致 cortisol 的結果假性偏高。
 以現行檢驗技術而言，檢驗誤差一般而言不至於影響醫療絕測。
 然而，針對本計算器用來粗估使用口服皮質醇，對於血液 cortisol 的干擾程度。
 
-在本計算器中，口服藥物使用one compartment model, first order kinetic作為預測模型。
+本計算器使用藥物動力學模型預估類固醇藥物
+口服藥物使用one compartment model, first order kinetic作為預測模型。
 
 ## limitation
 正確地理解檢驗方法有助於正確的臨床解讀。
