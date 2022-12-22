@@ -28,4 +28,4 @@ plasma cortisol 的檢驗使用 The Elecsys Cortisol II assay 作為參考。
 
 ## Reference
  1. Czock, D et al, (2005). Pharmacokinetics and pharmacodynamics of systemically administered glucocorticoids. Clinical pharmacokinetics, 44(1), 61-98.
- 2. Roche Diagnostics. Cortisol: Method Sheet. [link](https://pim-eservices.roche.com)
+ 2. Roche Diagnostics. Cortisol: Method Sheet. (https://pim-eservices.roche.com)
