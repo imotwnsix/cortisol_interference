@@ -1,4 +1,3 @@
-!pip install streamlit-option-menu
 import streamlit as st
 import math
 import datetime
