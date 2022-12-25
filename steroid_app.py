@@ -6,6 +6,7 @@ from streamlit_option_menu import option_menu
 # sidebar menu
 selected = option_menu(menu_title = None,
 options = ["Calculator", "Background", "Limitation", "Reference"],
+icons = ["calculator", "lightbulb", "exclamation-triangle", "file-earmark-text"],
 orientation = "horizontal",
 ) 
 
