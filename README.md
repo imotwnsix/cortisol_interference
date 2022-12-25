@@ -1,4 +1,4 @@
-# pharmacokinetics
+# Cortisol Interference Calculator
 ## Background
 **本計算器用來評估類固醇藥物對於皮質素(cortisol)檢驗結果的干擾程度。**
 
